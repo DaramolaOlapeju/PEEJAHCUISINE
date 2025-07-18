@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>PEEJAY'S CUISINE</title>
 <style>
-  /* Reset and base */
   body {
     background-color: lightblue;
     scroll-behavior: smooth;
@@ -14,7 +13,6 @@
     font-family: Arial, sans-serif;
   }
 
-  /* Header container: make height flexible, not fixed 100vh */
   header {
     background: url('cuisine.jpg') no-repeat center center/cover;
     border-radius: 10px;
@@ -23,13 +21,13 @@
     color: white;
     text-align: center;
     position: relative;
-    min-height: 400px; /* give enough height but flexible */
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  /* Headings: responsive font sizes with clamp */
+  
   .heading {
     font-family: 'Goudy Old Style', serif;
     font-size: clamp(1.8rem, 5vw, 3rem);
@@ -42,7 +40,6 @@
     margin: 0 0 2rem;
   }
 
-  /* Navigation / Menu styles */
   .menu {
     display: flex;
     flex-wrap: nowrap;
@@ -69,7 +66,6 @@
     transform: perspective(700px) scale(0.85);
   }
 
-  /* Hamburger Button - hidden on desktops */
   .hamburger {
     display: none;
     cursor: pointer;
@@ -85,7 +81,6 @@
     z-index: 10;
   }
 
-  /* Main container and content */
   .main-container {
     background: palegoldenrod;
     padding: 20px;
@@ -126,7 +121,6 @@
     object-fit: cover;
   }
 
-  /* Responsive adjustments for tablets & mobiles */
   @media (max-width: 900px) {
     .container1 {
       flex-direction: column;
@@ -142,11 +136,10 @@
     }
   }
 
-  /* Small devices: Hamburger and vertical menu */
   @media (max-width: 600px) {
     header {
       padding: 2.5rem 1rem 5rem;
-      min-height: auto; /* allow height grow */
+      min-height: auto; 
     }
     .heading {
       font-size: clamp(1.5rem, 6vw, 2.5rem);
@@ -155,7 +148,6 @@
       font-size: clamp(1rem, 4vw, 1.5rem);
       margin-bottom: 3.5rem;
     }
-    /* Menu initially hidden and vertical */
     .menu {
       flex-direction: column;
       display: none;
